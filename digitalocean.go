@@ -23,12 +23,12 @@ func readToken() string {
 	return tocken
 }
 
-// TokenSource is a fucking bullshit
+// TokenSource is a struct with auth tocken
 type TokenSource struct {
 	AccessToken string
 }
 
-// Token is a bullshit.
+// Token is a method to return token.
 func (t *TokenSource) Token() (*oauth2.Token, error) {
 	token := &oauth2.Token{
 		AccessToken: t.AccessToken,
