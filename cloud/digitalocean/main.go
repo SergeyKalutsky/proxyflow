@@ -7,7 +7,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/digitalocean/godo"
 	"golang.org/x/oauth2"
 )
 
